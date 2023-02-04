@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imc</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="img">
+        <img src="./src/img/balanca-de-banheiro.jpg" alt="#">
+    </div>
+    <div class="conteudo">
+        <form action="tabImc">
+            <div><h1>Calculo do Peso Ideal</h1></div>
+            <label for="inNome">Nome:</label>
+            <input type="text" id="inNome" required>
+            <br>
+            <label for="Sexo">Sexo:</label>
+            <input type="radio" name="sexo" id="inMasculino" required>
+            <label for="inSexo">Masculino</label>
+            <input type="radio" name="sexo" id="inFeminino" required>
+            <label for="inFeminino">Feminino:</label>
+            <br>
+            <label for="altura">Altura:</label>
+            <input type="number" min="0" step="0.01" id="inAltura" required>
+            <br><br>
+            <input type="submit" value="Calcular IMC">
+            <input type="reset" value="Limpar"><!--limpar os campos-->
+        </form>
+        <h3></h3><!--resposta-->
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
